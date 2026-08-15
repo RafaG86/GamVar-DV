@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <data name="HomePage" xml:space="preserve">
-    <value>Página de Inicio</value>
+  <data name="MetaTitle" xml:space="preserve">
+    <value>Inicio - GamVar Dv</value>
   </data>
-  <data name="Welcome" xml:space="preserve">
-    <value>Bienvenido</value>
+  <data name="HeroTitle" xml:space="preserve">
+    <value>Creamos el Futuro Digital a tu Medida</value>
   </data>
-  <data name="LearnAbout" xml:space="preserve">
-    <value>Aprende sobre</value>
+  <data name="HeroSubtitle" xml:space="preserve">
+    <value>Desarrollo de software personalizado y automatizaciones inteligentes impulsadas por Agentes de Inteligencia Artificial.</value>
   </data>
-  <data name="BuildingWebApps" xml:space="preserve">
-    <value>cómo crear aplicaciones web con ASP.NET Core</value>
+  <data name="HeroCTA" xml:space="preserve">
+    <value>Explorar Servicios</value>
+  </data>
+  <data name="ServicesTitle" xml:space="preserve">
+    <value>Nuestras Soluciones Tecnológicas</value>
+  </data>
+  <data name="Service1Title" xml:space="preserve">
+    <value>Aplicaciones a la Medida</value>
+  </data>
+  <data name="Service1Desc" xml:space="preserve">
+    <value>Diseñamos y desarrollamos plataformas web, móviles y sistemas empresariales robustos adaptados exactamente a los flujos y necesidades de tu negocio.</value>
+  </data>
+  <data name="Service2Title" xml:space="preserve">
+    <value>Automatización con Agentes IA</value>
+  </data>
+  <data name="Service2Desc" xml:space="preserve">
+    <value>Optimizamos tus procesos integrando agentes autónomos de Inteligencia Artificial que ejecutan tareas repetitivas, analizan datos y mejoran la eficiencia de tu equipo.</value>
+  </data>
+  <data name="CTASectionTitle" xml:space="preserve">
+    <value>¿Listo para transformar tu empresa?</value>
+  </data>
+  <data name="CTASectionDesc" xml:space="preserve">
+    <value>Cuéntanos tu idea o el desafío que deseas resolver. Nuestro equipo diseñará una solución tecnológica óptima para ti.</value>
+  </data>
+  <data name="CTAButton" xml:space="preserve">
+    <value>Contáctanos hoy</value>
   </data>
 </root>

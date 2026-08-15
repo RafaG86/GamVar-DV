@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <data name="HomePage" xml:space="preserve">
-    <value>Home Page</value>
+  <data name="MetaTitle" xml:space="preserve">
+    <value>Home - GamVar Dv</value>
   </data>
-  <data name="Welcome" xml:space="preserve">
-    <value>Welcome</value>
+  <data name="HeroTitle" xml:space="preserve">
+    <value>We Shape Your Digital Future</value>
   </data>
-  <data name="LearnAbout" xml:space="preserve">
-    <value>Learn about</value>
+  <data name="HeroSubtitle" xml:space="preserve">
+    <value>Tailor-made software development and smart automations powered by AI Agents.</value>
   </data>
-  <data name="BuildingWebApps" xml:space="preserve">
-    <value>building Web apps with ASP.NET Core</value>
+  <data name="HeroCTA" xml:space="preserve">
+    <value>Explore Services</value>
+  </data>
+  <data name="ServicesTitle" xml:space="preserve">
+    <value>Our Technological Solutions</value>
+  </data>
+  <data name="Service1Title" xml:space="preserve">
+    <value>Custom Applications</value>
+  </data>
+  <data name="Service1Desc" xml:space="preserve">
+    <value>We design and develop robust web platforms, mobile apps, and enterprise systems tailored exactly to your business workflows and needs.</value>
+  </data>
+  <data name="Service2Title" xml:space="preserve">
+    <value>AI Agent Automation</value>
+  </data>
+  <data name="Service2Desc" xml:space="preserve">
+    <value>Optimize your processes by integrating autonomous AI agents that handle repetitive tasks, analyze data, and boost your team's efficiency.</value>
+  </data>
+  <data name="CTASectionTitle" xml:space="preserve">
+    <value>Ready to transform your business?</value>
+  </data>
+  <data name="CTASectionDesc" xml:space="preserve">
+    <value>Tell us about your idea or the challenge you want to solve. Our team will design the perfect tech solution for you.</value>
+  </data>
+  <data name="CTAButton" xml:space="preserve">
+    <value>Contact us today</value>
   </data>
 </root>

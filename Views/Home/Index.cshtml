@@ -2,10 +2,64 @@
 @inject IViewLocalizer Localizer
 
 @{
-    ViewData["Title"] = Localizer["HomePage"];
+    ViewData["Title"] = Localizer["MetaTitle"];
 }
 
-<div class="text-center">
-    <h1 class="display-4">@Localizer["Welcome"]</h1>
-    <p>@Localizer["LearnAbout"] <a href="https://learn.microsoft.com/aspnet/core">@Localizer["BuildingWebApps"]</a>.</p>
+<!-- Sección Hero -->
+<div class="bg-dark text-white py-5 mb-5 rounded-3 shadow-lg position-relative overflow-hidden" style="background: linear-gradient(135deg, #1e1e2f 0%, #111119 100%);">
+    <div class="container py-5 text-center position-relative z-1">
+        <h1 class="display-3 fw-bold mb-3">@Localizer["HeroTitle"]</h1>
+        <p class="lead text-muted mb-4 fs-4" style="color: #a0a0b0 !important;">@Localizer["HeroSubtitle"]</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="#services" class="btn btn-primary btn-lg px-4 gap-3 shadow">@Localizer["HeroCTA"]</a>
+        </div>
+    </div>
 </div>
+
+<!-- Sección de Servicios -->
+<div id="services" class="container py-5">
+    <h2 class="text-center fw-bold mb-5">@Localizer["ServicesTitle"]</h2>
+    
+    <div class="row g-4 justify-content-center">
+        <!-- Servicio 1: Software a la medida -->
+        <div class="col-md-6 col-lg-5">
+            <div class="card h-100 border-0 shadow-sm hover-card p-4 transition" style="background-color: #fcfcfd;">
+                <div class="text-primary mb-3">
+                    <i class="bi bi-code-slash" style="font-size: 3rem;"></i>
+                </div>
+                <h3 class="fw-bold mb-3">@Localizer["Service1Title"]</h3>
+                <p class="text-muted mb-0">@Localizer["Service1Desc"]</p>
+            </div>
+        </div>
+
+        <!-- Servicio 2: Agentes de IA -->
+        <div class="col-md-6 col-lg-5">
+            <div class="card h-100 border-0 shadow-sm hover-card p-4 transition" style="background-color: #fcfcfd;">
+                <div class="text-success mb-3">
+                    <i class="bi bi-cpu" style="font-size: 3rem;"></i>
+                </div>
+                <h3 class="fw-bold mb-3">@Localizer["Service2Title"]</h3>
+                <p class="text-muted mb-0">@Localizer["Service2Desc"]</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sección de Cierre / Contacto -->
+<div class="bg-light py-5 rounded-3 border">
+    <div class="container text-center py-4">
+        <h2 class="fw-bold mb-3">@Localizer["CTASectionTitle"]</h2>
+        <p class="text-muted mb-4 col-md-8 mx-auto">@Localizer["CTASectionDesc"]</p>
+        <a href="mailto:contacto@gamvardv.com" class="btn btn-dark btn-lg shadow-sm">@Localizer["CTAButton"]</a>
+    </div>
+</div>
+
+<style>
+    .hover-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hover-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 1rem 3rem rgba(0,0,0,.125) !important;
+    }
+</style>
