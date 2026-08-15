@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="LoginTitle" xml:space="preserve"><value>Log In</value></data>
+  <data name="Username" xml:space="preserve"><value>Username</value></data>
+  <data name="UsernamePlaceholder" xml:space="preserve"><value>e.g. John</value></data>
+  <data name="SelectRole" xml:space="preserve"><value>Select Role</value></data>
+  <data name="RegularUser" xml:space="preserve"><value>Regular User (User)</value></data>
+  <data name="Administrator" xml:space="preserve"><value>Administrator (Admin)</value></data>
+  <data name="SubmitButton" xml:space="preserve"><value>Enter</value></data>
+</root>

@@ -103,3 +103,8 @@ C:\Users\Flotante\Documents\MiAppWebMvc\obj\Debug\net9.0\en\MiAppWebMvc.resource
 C:\Users\Flotante\Documents\MiAppWebMvc\obj\Debug\net9.0\en\MiAppWebMvc.resources.dll
 C:\Users\Flotante\Documents\MiAppWebMvc\obj\Debug\net9.0\es\MiAppWebMvc.resources.cs
 C:\Users\Flotante\Documents\MiAppWebMvc\obj\Debug\net9.0\es\MiAppWebMvc.resources.dll
+C:\Users\Flotante\Documents\MiAppWebMvc\obj\Debug\net9.0\MiAppWebMvc.sourcelink.json
+C:\Users\Flotante\Documents\MiAppWebMvc\obj\Debug\net9.0\MiAppWebMvc.Resources.Views.Account.Login.en.resources
+C:\Users\Flotante\Documents\MiAppWebMvc\obj\Debug\net9.0\MiAppWebMvc.Resources.Views.Account.Login.es.resources
+C:\Users\Flotante\Documents\MiAppWebMvc\obj\Debug\net9.0\MiAppWebMvc.Resources.Views.Shared._Layout.en.resources
+C:\Users\Flotante\Documents\MiAppWebMvc\obj\Debug\net9.0\MiAppWebMvc.Resources.Views.Shared._Layout.es.resources

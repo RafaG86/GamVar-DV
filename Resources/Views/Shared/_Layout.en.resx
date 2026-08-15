@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Home" xml:space="preserve"><value>Home</value></data>
+  <data name="Privacy" xml:space="preserve"><value>Privacy</value></data>
+  <data name="PanelAdmin" xml:space="preserve"><value>Admin Panel</value></data>
+  <data name="Hello" xml:space="preserve"><value>Hello</value></data>
+  <data name="Logout" xml:space="preserve"><value>Log Out</value></data>
+  <data name="Login" xml:space="preserve"><value>Log In</value></data>
+</root>

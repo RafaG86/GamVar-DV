@@ -1,3 +1,5 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,17 +24,17 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">@Localizer["Home"]</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">@Localizer["Privacy"]</a>
                         </li>
                         
                         @* SOLO VISIBLE PARA ADMINS *@
                         @if (User.IsInRole("Admin"))
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-danger fw-bold" asp-area="" asp-controller="Home" asp-action="AdminOnly">Panel Admin</a>
+                                <a class="nav-link text-danger fw-bold" asp-area="" asp-controller="Home" asp-action="AdminOnly">@Localizer["PanelAdmin"]</a>
                             </li>
                         }
                     </ul>
@@ -59,16 +61,16 @@
                         @if (User.Identity.IsAuthenticated)
                         {
                             <span class="navbar-text text-dark me-3">
-                                Hola, <strong>@User.Identity.Name</strong> (@User.FindFirst(System.Security.Claims.ClaimTypes.Role)?.Value)
+                                @Localizer["Hello"], <strong>@User.Identity.Name</strong> (@User.FindFirst(System.Security.Claims.ClaimTypes.Role)?.Value)
                             </span>
                             <li class="nav-item">
-                                <a class="btn btn-outline-danger btn-sm" asp-controller="Account" asp-action="Logout">Cerrar Sesión</a>
+                                <a class="btn btn-outline-danger btn-sm" asp-controller="Account" asp-action="Logout">@Localizer["Logout"]</a>
                             </li>
                         }
                         else
                         {
                             <li class="nav-item">
-                                <a class="btn btn-outline-primary btn-sm" asp-controller="Account" asp-action="Login">Iniciar Sesión</a>
+                                <a class="btn btn-outline-primary btn-sm" asp-controller="Account" asp-action="Login">@Localizer["Login"]</a>
                             </li>
                         }
                     </ul>
@@ -84,7 +86,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2026 - GamVar Dv - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2026 - GamVar Dv - <a asp-area="" asp-controller="Home" asp-action="Privacy">@Localizer["Privacy"]</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
