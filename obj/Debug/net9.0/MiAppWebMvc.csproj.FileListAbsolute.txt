@@ -108,3 +108,4 @@ C:\Users\Flotante\Documents\MiAppWebMvc\obj\Debug\net9.0\MiAppWebMvc.Resources.V
 C:\Users\Flotante\Documents\MiAppWebMvc\obj\Debug\net9.0\MiAppWebMvc.Resources.Views.Account.Login.es.resources
 C:\Users\Flotante\Documents\MiAppWebMvc\obj\Debug\net9.0\MiAppWebMvc.Resources.Views.Shared._Layout.en.resources
 C:\Users\Flotante\Documents\MiAppWebMvc\obj\Debug\net9.0\MiAppWebMvc.Resources.Views.Shared._Layout.es.resources
+C:\Users\Flotante\Documents\MiAppWebMvc\obj\Debug\net9.0\compressed\c2qf747to6-jv66pa43dv.gz
