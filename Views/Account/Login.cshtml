@@ -1,0 +1,23 @@
+@{
+    ViewData["Title"] = "Iniciar Sesión";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-4 card p-4 shadow-sm">
+        <h2 class="text-center">Iniciar Sesión</h2>
+        <form asp-action="Login" method="post" class="mt-3">
+            <div class="mb-3">
+                <label class="form-label">Nombre de Usuario</label>
+                <input type="text" name="username" class="form-control" placeholder="Ej: Juan" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Seleccionar Rol</label>
+                <select name="role" class="form-select">
+                    <option value="User">Usuario Normal (User)</option>
+                    <option value="Admin">Administrador (Admin)</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Entrar</button>
+        </form>
+    </div>
+</div>

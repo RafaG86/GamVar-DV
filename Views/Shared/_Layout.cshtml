@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - GamVar Dv</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MiAppWebMvc.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">GamVar Dv</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                        
+                        @* SOLO VISIBLE PARA ADMINS *@
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-danger fw-bold" asp-area="" asp-controller="Home" asp-action="AdminOnly">Panel Admin</a>
+                            </li>
+                        }
+                    </ul>
+                    
+                    @* MOSTRAR NOMBRE DE USUARIO, ROL, IDIOMA Y BOTÓN LOGOUT/LOGIN *@
+                    <ul class="navbar-nav align-items-center">
+                        <!-- Selector de Idioma con icono de globo -->
+                        <li class="nav-item me-3">
+                            <form asp-controller="Language" asp-action="SetLanguage" 
+                                  asp-route-returnUrl="@Context.Request.Path@Context.Request.QueryString" 
+                                  method="post" class="d-flex align-items-center">
+                                <i class="bi bi-globe text-dark me-1" style="font-size: 1.2rem;"></i>
+                                <select name="culture" onchange="this.form.submit();" class="form-select form-select-sm" style="width: auto; background-color: transparent; border: none; font-size: 0.9rem;">
+                                    @{
+                                        var requestCulture = Context.Features.Get<Microsoft.AspNetCore.Localization.IRequestCultureFeature>();
+                                        var currentCulture = requestCulture?.RequestCulture.UICulture.Name;
+                                    }
+                                    <option value="es" selected="@(currentCulture == "es" ? "selected" : null)">ES</option>
+                                    <option value="en" selected="@(currentCulture == "en" ? "selected" : null)">EN</option>
+                                </select>
+                            </form>
+                        </li>
+
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <span class="navbar-text text-dark me-3">
+                                Hola, <strong>@User.Identity.Name</strong> (@User.FindFirst(System.Security.Claims.ClaimTypes.Role)?.Value)
+                            </span>
+                            <li class="nav-item">
+                                <a class="btn btn-outline-danger btn-sm" asp-controller="Account" asp-action="Logout">Cerrar Sesión</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="btn btn-outline-primary btn-sm" asp-controller="Account" asp-action="Login">Iniciar Sesión</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2026 - GamVar Dv - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
