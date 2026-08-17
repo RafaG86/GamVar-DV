@@ -5,14 +5,17 @@
     ViewData["Title"] = Localizer["MetaTitle"];
 }
 
-<!-- Hero Section - Modern 2 Columns -->
-<section class="py-5 my-3 position-relative">
-    <div class="container py-lg-4">
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  HERO SECTION                                              -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="hero-section py-5 my-3 position-relative">
+    <div class="hero-bg-blob"></div>
+    <div class="container py-lg-4 position-relative">
         <div class="row align-items-center g-5">
-            <!-- Columna Texto y CTA -->
+            <!-- Texto y CTA -->
             <div class="col-lg-7 text-center text-lg-start">
-                <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill fw-semibold mb-3 fs-6">
-                    <i class="bi bi-stars me-1"></i> Software &amp; AI Agents
+                <span class="badge badge-pill-glow px-3 py-2 mb-3 fs-6">
+                    <i class="bi bi-stars me-1"></i> Software &amp; AI Agents · Colombia
                 </span>
                 <h1 class="display-4 fw-extrabold text-dark tracking-tight mb-3">
                     @Localizer["HeroTitle"]
@@ -21,16 +24,21 @@
                     @Localizer["HeroSubtitle"]
                 </p>
                 <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
-                    <a href="#services" class="btn btn-primary btn-lg px-4 py-3 shadow-sm rounded-pill fw-semibold">
+                    <a href="#services" id="hero-cta-services" class="btn btn-primary btn-lg px-4 py-3 shadow-sm rounded-pill fw-semibold btn-glow">
                         <i class="bi bi-lightning-charge-fill me-1"></i> @Localizer["HeroCTA"]
                     </a>
-                    <a href="mailto:contacto@gamvardv.com" class="btn btn-outline-dark btn-lg px-4 py-3 rounded-pill fw-semibold">
+                    <a href="mailto:contacto@gamvardv.com" id="hero-cta-contact" class="btn btn-outline-dark btn-lg px-4 py-3 rounded-pill fw-semibold">
                         @Localizer["CTAButton"]
                     </a>
                 </div>
+                <!-- Trust signals inline -->
+                <div class="d-flex flex-wrap gap-3 mt-4 justify-content-center justify-content-lg-start">
+                    <span class="trust-chip"><i class="bi bi-check-circle-fill text-success me-1"></i>Diagnóstico gratuito</span>
+                    <span class="trust-chip"><i class="bi bi-shield-lock-fill text-primary me-1"></i>Proyectos a la medida</span>
+                    <span class="trust-chip"><i class="bi bi-headset text-info me-1"></i>Soporte continuo</span>
+                </div>
             </div>
-            
-            <!-- Columna Logo Visual -->
+            <!-- Logo Visual -->
             <div class="col-lg-5 text-center">
                 <div class="hero-logo-wrapper p-3">
                     <img src="~/images/logo.svg" alt="Grupo GA&amp;V" class="img-fluid hero-logo" style="max-height: 280px; filter: drop-shadow(0 15px 30px rgba(30, 58, 95, 0.15));" />
@@ -40,7 +48,9 @@
     </div>
 </section>
 
-<!-- Barra de Pilares de Valor (Motto de la Empresa) -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  PILARES DE VALOR                                          -->
+<!-- ═══════════════════════════════════════════════════════════ -->
 <section class="py-4 my-4 bg-light rounded-4 border">
     <div class="container">
         <div class="row g-4 text-center">
@@ -81,23 +91,59 @@
     </div>
 </section>
 
-<!-- Sección de Servicios -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  ESTADÍSTICAS DE IMPACTO                                   -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="py-5 stats-section">
+    <div class="container">
+        <div class="row g-4 text-center">
+            <div class="col-6 col-md-3">
+                <div class="stat-card p-4 rounded-4">
+                    <div class="stat-number text-primary">70<span class="fs-4">%</span></div>
+                    <p class="text-muted small mb-0">Reducción promedio de tareas manuales con automatización IA</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-card p-4 rounded-4">
+                    <div class="stat-number text-success">24/7</div>
+                    <p class="text-muted small mb-0">Disponibilidad de los agentes conversacionales</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-card p-4 rounded-4">
+                    <div class="stat-number text-info">3<span class="fs-4">x</span></div>
+                    <p class="text-muted small mb-0">Más rápido el cierre de leads con IA en ventas</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-card p-4 rounded-4">
+                    <div class="stat-number text-warning">ROI</div>
+                    <p class="text-muted small mb-0">Positivo desde el primer mes en procesos automatizados</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  SERVICIOS                                                 -->
+<!-- ═══════════════════════════════════════════════════════════ -->
 <section id="services" class="py-5">
     <div class="container">
         <div class="text-center mb-5">
             <h6 class="text-primary fw-bold text-uppercase tracking-wider">Servicios</h6>
             <h2 class="display-6 fw-bold text-dark">@Localizer["ServicesTitle"]</h2>
+            <p class="text-muted col-md-7 mx-auto mt-2">Soluciones alineadas con lo que el mercado colombiano está demandando en 2025-2026</p>
         </div>
-        
-        <div class="row g-4 justify-content-center">
+        <div class="row g-4">
             <!-- Servicio 1: Software a la medida -->
-            <div class="col-md-6 col-lg-5">
-                <div class="card h-100 border rounded-4 shadow-sm p-4 p-lg-5 hover-card transition bg-white">
-                    <div class="icon-box bg-primary bg-opacity-10 text-primary rounded-3 d-inline-flex align-items-center justify-content-center mb-4" style="width: 60px; height: 60px;">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border rounded-4 shadow-sm p-4 hover-card bg-white">
+                    <div class="icon-box bg-primary bg-opacity-10 text-primary rounded-3 d-inline-flex align-items-center justify-content-center mb-4" style="width:56px;height:56px;">
                         <i class="bi bi-code-slash fs-2"></i>
                     </div>
-                    <h4 class="fw-bold text-dark mb-3">@Localizer["Service1Title"]</h4>
-                    <p class="text-secondary mb-4 leading-relaxed">@Localizer["Service1Desc"]</p>
+                    <h4 class="fw-bold text-dark mb-2">@Localizer["Service1Title"]</h4>
+                    <p class="text-secondary small mb-4">@Localizer["Service1Desc"]</p>
                     <ul class="list-unstyled text-secondary small mb-0 mt-auto">
                         <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Arquitectura Escalable (.NET / Cloud)</li>
                         <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Plataformas Web y Móviles</li>
@@ -105,19 +151,81 @@
                     </ul>
                 </div>
             </div>
-
-            <!-- Servicio 2: Agentes de IA -->
-            <div class="col-md-6 col-lg-5">
-                <div class="card h-100 border rounded-4 shadow-sm p-4 p-lg-5 hover-card transition bg-white">
-                    <div class="icon-box bg-success bg-opacity-10 text-success rounded-3 d-inline-flex align-items-center justify-content-center mb-4" style="width: 60px; height: 60px;">
+            <!-- Servicio 2: Agentes IA -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border rounded-4 shadow-sm p-4 hover-card bg-white">
+                    <div class="icon-box bg-success bg-opacity-10 text-success rounded-3 d-inline-flex align-items-center justify-content-center mb-4" style="width:56px;height:56px;">
                         <i class="bi bi-robot fs-2"></i>
                     </div>
-                    <h4 class="fw-bold text-dark mb-3">@Localizer["Service2Title"]</h4>
-                    <p class="text-secondary mb-4 leading-relaxed">@Localizer["Service2Desc"]</p>
+                    <h4 class="fw-bold text-dark mb-2">@Localizer["Service2Title"]</h4>
+                    <p class="text-secondary small mb-4">@Localizer["Service2Desc"]</p>
                     <ul class="list-unstyled text-secondary small mb-0 mt-auto">
-                        <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Agentes Autónomos para Tareas Repetitivas</li>
-                        <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Automatización de Procesos Empresariales</li>
-                        <li><i class="bi bi-check2-circle text-success me-2"></i>Análisis Inteligente y LLMs</li>
+                        <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Agentes Autónomos Multiagente</li>
+                        <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Automatización de Procesos (RPA + IA)</li>
+                        <li><i class="bi bi-check2-circle text-success me-2"></i>Análisis Inteligente con LLMs</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Servicio 3: Agentes Conversacionales WhatsApp (ALTA DEMANDA) -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border rounded-4 shadow-sm p-4 hover-card bg-white service-highlight">
+                    <div class="badge bg-warning text-dark position-absolute top-0 end-0 m-3 rounded-pill small fw-semibold">
+                        <i class="bi bi-fire me-1"></i>Alta demanda
+                    </div>
+                    <div class="icon-box rounded-3 d-inline-flex align-items-center justify-content-center mb-4" style="width:56px;height:56px;background:rgba(37,211,102,0.12);color:#25d366;">
+                        <i class="bi bi-chat-dots-fill fs-2"></i>
+                    </div>
+                    <h4 class="fw-bold text-dark mb-2">@Localizer["Service3Title"]</h4>
+                    <p class="text-secondary small mb-4">@Localizer["Service3Desc"]</p>
+                    <ul class="list-unstyled text-secondary small mb-0 mt-auto">
+                        <li class="mb-2"><i class="bi bi-check2-circle me-2" style="color:#25d366;"></i>Bots WhatsApp / Email / Web</li>
+                        <li class="mb-2"><i class="bi bi-check2-circle me-2" style="color:#25d366;"></i>Atención al cliente 24/7</li>
+                        <li><i class="bi bi-check2-circle me-2" style="color:#25d366;"></i>Calificación automática de leads</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Servicio 4: RPA e Integración -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border rounded-4 shadow-sm p-4 hover-card bg-white">
+                    <div class="icon-box bg-warning bg-opacity-10 text-warning rounded-3 d-inline-flex align-items-center justify-content-center mb-4" style="width:56px;height:56px;">
+                        <i class="bi bi-diagram-3-fill fs-2"></i>
+                    </div>
+                    <h4 class="fw-bold text-dark mb-2">@Localizer["Service4Title"]</h4>
+                    <p class="text-secondary small mb-4">@Localizer["Service4Desc"]</p>
+                    <ul class="list-unstyled text-secondary small mb-0 mt-auto">
+                        <li class="mb-2"><i class="bi bi-check2-circle text-warning me-2"></i>Conexión CRM, ERP, Bases de Datos</li>
+                        <li class="mb-2"><i class="bi bi-check2-circle text-warning me-2"></i>Automatización de Facturación y RRHH</li>
+                        <li><i class="bi bi-check2-circle text-warning me-2"></i>Google Workspace · Microsoft 365</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Servicio 5: Análisis de Datos -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border rounded-4 shadow-sm p-4 hover-card bg-white">
+                    <div class="icon-box bg-info bg-opacity-10 text-info rounded-3 d-inline-flex align-items-center justify-content-center mb-4" style="width:56px;height:56px;">
+                        <i class="bi bi-bar-chart-line-fill fs-2"></i>
+                    </div>
+                    <h4 class="fw-bold text-dark mb-2">@Localizer["Service5Title"]</h4>
+                    <p class="text-secondary small mb-4">@Localizer["Service5Desc"]</p>
+                    <ul class="list-unstyled text-secondary small mb-0 mt-auto">
+                        <li class="mb-2"><i class="bi bi-check2-circle text-info me-2"></i>Dashboards e Inteligencia de Negocio</li>
+                        <li class="mb-2"><i class="bi bi-check2-circle text-info me-2"></i>Modelos Predictivos con IA</li>
+                        <li><i class="bi bi-check2-circle text-info me-2"></i>Reportes Automáticos</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Servicio 6: Consultoría Estratégica IA -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border rounded-4 shadow-sm p-4 hover-card bg-white">
+                    <div class="icon-box rounded-3 d-inline-flex align-items-center justify-content-center mb-4" style="width:56px;height:56px;background:rgba(111,66,193,0.1);color:#6f42c1;">
+                        <i class="bi bi-lightbulb-fill fs-2"></i>
+                    </div>
+                    <h4 class="fw-bold text-dark mb-2">@Localizer["Service6Title"]</h4>
+                    <p class="text-secondary small mb-4">@Localizer["Service6Desc"]</p>
+                    <ul class="list-unstyled text-secondary small mb-0 mt-auto">
+                        <li class="mb-2"><i class="bi bi-check2-circle me-2" style="color:#6f42c1;"></i>Diagnóstico gratuito de procesos</li>
+                        <li class="mb-2"><i class="bi bi-check2-circle me-2" style="color:#6f42c1;"></i>Hoja de ruta de automatización</li>
+                        <li><i class="bi bi-check2-circle me-2" style="color:#6f42c1;"></i>Métricas de ROI claras</li>
                     </ul>
                 </div>
             </div>
@@ -125,22 +233,181 @@
     </div>
 </section>
 
-<!-- Sección de Cierre / Contacto -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  CÓMO TRABAJAMOS                                           -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="py-5 bg-light rounded-4 my-4">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h6 class="text-primary fw-bold text-uppercase tracking-wider">Proceso</h6>
+            <h2 class="display-6 fw-bold text-dark">@Localizer["ProcessTitle"]</h2>
+        </div>
+        <div class="row g-4 justify-content-center text-center">
+            <div class="col-6 col-md-3">
+                <div class="process-step">
+                    <div class="process-number">01</div>
+                    <div class="process-icon bg-primary bg-opacity-10 text-primary mx-auto mb-3">
+                        <i class="bi bi-search fs-3"></i>
+                    </div>
+                    <h6 class="fw-bold text-dark">@Localizer["Process1Title"]</h6>
+                    <p class="text-muted small">@Localizer["Process1Desc"]</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="process-step">
+                    <div class="process-number">02</div>
+                    <div class="process-icon bg-success bg-opacity-10 text-success mx-auto mb-3">
+                        <i class="bi bi-pencil-square fs-3"></i>
+                    </div>
+                    <h6 class="fw-bold text-dark">@Localizer["Process2Title"]</h6>
+                    <p class="text-muted small">@Localizer["Process2Desc"]</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="process-step">
+                    <div class="process-number">03</div>
+                    <div class="process-icon bg-info bg-opacity-10 text-info mx-auto mb-3">
+                        <i class="bi bi-gear-wide-connected fs-3"></i>
+                    </div>
+                    <h6 class="fw-bold text-dark">@Localizer["Process3Title"]</h6>
+                    <p class="text-muted small">@Localizer["Process3Desc"]</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="process-step">
+                    <div class="process-number">04</div>
+                    <div class="process-icon bg-warning bg-opacity-10 text-warning mx-auto mb-3">
+                        <i class="bi bi-headset fs-3"></i>
+                    </div>
+                    <h6 class="fw-bold text-dark">@Localizer["Process4Title"]</h6>
+                    <p class="text-muted small">@Localizer["Process4Desc"]</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  SECTORES QUE ATENDEMOS                                    -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h6 class="text-primary fw-bold text-uppercase tracking-wider">Sectores</h6>
+            <h2 class="display-6 fw-bold text-dark">@Localizer["SectorsTitle"]</h2>
+        </div>
+        <div class="row g-3 justify-content-center">
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="sector-pill text-center p-3 rounded-3 border hover-card">
+                    <i class="bi bi-shop fs-2 text-primary mb-2 d-block"></i>
+                    <span class="fw-semibold small text-dark">@Localizer["SectorRetail"]</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="sector-pill text-center p-3 rounded-3 border hover-card">
+                    <i class="bi bi-hospital fs-2 text-danger mb-2 d-block"></i>
+                    <span class="fw-semibold small text-dark">@Localizer["SectorHealth"]</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="sector-pill text-center p-3 rounded-3 border hover-card">
+                    <i class="bi bi-bank fs-2 text-success mb-2 d-block"></i>
+                    <span class="fw-semibold small text-dark">@Localizer["SectorFinance"]</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="sector-pill text-center p-3 rounded-3 border hover-card">
+                    <i class="bi bi-boxes fs-2 text-warning mb-2 d-block"></i>
+                    <span class="fw-semibold small text-dark">@Localizer["SectorLogistics"]</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="sector-pill text-center p-3 rounded-3 border hover-card">
+                    <i class="bi bi-mortarboard fs-2 text-info mb-2 d-block"></i>
+                    <span class="fw-semibold small text-dark">@Localizer["SectorEdu"]</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="sector-pill text-center p-3 rounded-3 border hover-card">
+                    <i class="bi bi-building-gear fs-2 text-secondary mb-2 d-block"></i>
+                    <span class="fw-semibold small text-dark">@Localizer["SectorIndustry"]</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  CTA FINAL                                                 -->
+<!-- ═══════════════════════════════════════════════════════════ -->
 <section class="py-5 my-5">
     <div class="container">
-        <div class="p-5 rounded-4 text-center position-relative overflow-hidden shadow-sm border bg-white" style="background: linear-gradient(180deg, #ffffff 0%, #f8f9fc 100%);">
-            <h2 class="display-6 fw-bold text-dark mb-3">@Localizer["CTASectionTitle"]</h2>
-            <p class="text-secondary fs-5 col-md-8 mx-auto mb-4">@Localizer["CTASectionDesc"]</p>
-            <a href="mailto:contacto@gamvardv.com" class="btn btn-primary btn-lg px-5 py-3 rounded-pill shadow-sm fw-semibold">
-                <i class="bi bi-envelope-fill me-2"></i> @Localizer["CTAButton"]
-            </a>
+        <div class="cta-gradient-card p-5 rounded-4 text-center position-relative overflow-hidden shadow-sm border">
+            <div class="cta-glow-orb"></div>
+            <h2 class="display-6 fw-bold text-dark mb-3 position-relative">@Localizer["CTASectionTitle"]</h2>
+            <p class="text-secondary fs-5 col-md-8 mx-auto mb-4 position-relative">@Localizer["CTASectionDesc"]</p>
+            <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center position-relative">
+                <a href="mailto:contacto@gamvardv.com" id="cta-email-main" class="btn btn-primary btn-lg px-5 py-3 rounded-pill shadow-sm fw-semibold btn-glow">
+                    <i class="bi bi-envelope-fill me-2"></i> @Localizer["CTAButton"]
+                </a>
+                <a href="#services" id="cta-services-link" class="btn btn-outline-dark btn-lg px-4 py-3 rounded-pill fw-semibold">
+                    <i class="bi bi-grid-1x2-fill me-2"></i>@Localizer["CTAServicesLink"]
+                </a>
+            </div>
+            <p class="text-muted small mt-3 position-relative">
+                <i class="bi bi-chat-left-text me-1 text-success"></i> @Localizer["CTADiagFree"]
+            </p>
         </div>
     </div>
 </section>
 
 <style>
+    /* ── Typography ─────────────────────────── */
     .fw-extrabold { font-weight: 800; }
     .tracking-tight { letter-spacing: -0.02em; }
+    .tracking-wider { letter-spacing: 0.08em; }
+
+    /* ── Hero ───────────────────────────────── */
+    .hero-section { overflow: hidden; }
+    .hero-bg-blob {
+        position: absolute; top: -120px; right: -100px;
+        width: 520px; height: 520px; border-radius: 50%;
+        background: radial-gradient(circle, rgba(13,110,253,0.07) 0%, transparent 70%);
+        pointer-events: none;
+    }
+    .badge-pill-glow {
+        background: rgba(13,110,253,0.1); color: #0d6efd;
+        border: 1px solid rgba(13,110,253,0.2);
+        font-weight: 600; border-radius: 50px;
+        animation: pillPulse 3s ease-in-out infinite;
+    }
+    @@keyframes pillPulse {
+        0%,100% { box-shadow: 0 0 0 0 rgba(13,110,253,0.15); }
+        50%      { box-shadow: 0 0 0 8px rgba(13,110,253,0); }
+    }
+    .trust-chip {
+        background: #f8f9fc; border: 1px solid #e8ecf0;
+        border-radius: 50px; padding: 5px 14px; font-size: 0.82rem;
+        color: #495057; font-weight: 500;
+    }
+    .hero-logo { transition: transform 0.4s ease; }
+    .hero-logo:hover { transform: scale(1.04); }
+
+    /* ── Stats ──────────────────────────────── */
+    .stat-card {
+        background: #fff; border: 1px solid #eef0f5;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .stat-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 28px rgba(0,0,0,0.07);
+    }
+    .stat-number {
+        font-size: 3rem; font-weight: 800; line-height: 1;
+        margin-bottom: 0.5rem;
+    }
+
+    /* ── Service Cards ──────────────────────── */
     .hover-card {
         transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     }
@@ -149,10 +416,46 @@
         box-shadow: 0 1.25rem 2.5rem rgba(30, 58, 95, 0.08) !important;
         border-color: #0d6efd !important;
     }
-    .hero-logo {
-        transition: transform 0.4s ease;
+    .service-highlight { position: relative; }
+
+    /* ── Process Steps ──────────────────────── */
+    .process-step { position: relative; padding-bottom: 1rem; }
+    .process-number {
+        font-size: 0.7rem; font-weight: 800; letter-spacing: 0.1em;
+        color: #0d6efd; opacity: 0.5; margin-bottom: 0.75rem;
     }
-    .hero-logo:hover {
-        transform: scale(1.04);
+    .process-icon {
+        width: 64px; height: 64px; border-radius: 16px;
+        display: flex; align-items: center; justify-content: center;
+        transition: transform 0.3s ease;
     }
+    .process-step:hover .process-icon { transform: scale(1.1); }
+
+    /* ── Sectors ────────────────────────────── */
+    .sector-pill { background: #fff; transition: transform 0.25s ease, background 0.25s ease; cursor: default; }
+    .sector-pill:hover { background: #f0f4ff; border-color: #0d6efd !important; }
+
+    /* ── CTA Card ───────────────────────────── */
+    .cta-gradient-card {
+        background: linear-gradient(135deg, #ffffff 0%, #f0f4ff 50%, #f8f9fc 100%);
+    }
+    .cta-glow-orb {
+        position: absolute; top: -60px; left: 50%; transform: translateX(-50%);
+        width: 300px; height: 300px; border-radius: 50%;
+        background: radial-gradient(circle, rgba(13,110,253,0.06) 0%, transparent 70%);
+        pointer-events: none;
+    }
+
+    /* ── Buttons ────────────────────────────── */
+    .btn-glow { position: relative; overflow: hidden; }
+    .btn-glow::after {
+        content: '';
+        position: absolute; top: -50%; left: -60%;
+        width: 40%; height: 200%;
+        background: rgba(255,255,255,0.18);
+        transform: skewX(-20deg);
+        transition: left 0.5s ease;
+    }
+    .btn-glow:hover::after { left: 120%; }
 </style>
+

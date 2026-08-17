@@ -36,4 +36,82 @@
   <data name="CTAButton" xml:space="preserve">
     <value>Contact us today</value>
   </data>
+  <data name="CTAServicesLink" xml:space="preserve">
+    <value>See all services</value>
+  </data>
+  <data name="CTADiagFree" xml:space="preserve">
+    <value>First diagnostic session is completely free and no-commitment.</value>
+  </data>
+  <data name="Service3Title" xml:space="preserve">
+    <value>Conversational AI Agents</value>
+  </data>
+  <data name="Service3Desc" xml:space="preserve">
+    <value>We build AI-powered chatbots and voice agents for WhatsApp, email and web that serve customers, qualify leads and manage appointments autonomously around the clock.</value>
+  </data>
+  <data name="Service4Title" xml:space="preserve">
+    <value>RPA &amp; Integrations</value>
+  </data>
+  <data name="Service4Desc" xml:space="preserve">
+    <value>We connect your systems (CRM, ERP, Accounting) and automate flows like invoicing, inventory and lead tracking, eliminating repetitive manual work from your team.</value>
+  </data>
+  <data name="Service5Title" xml:space="preserve">
+    <value>Data Analytics &amp; AI</value>
+  </data>
+  <data name="Service5Desc" xml:space="preserve">
+    <value>We turn your business data into strategic decisions with smart dashboards, predictive models and AI-generated automated reports.</value>
+  </data>
+  <data name="Service6Title" xml:space="preserve">
+    <value>AI Strategic Consulting</value>
+  </data>
+  <data name="Service6Desc" xml:space="preserve">
+    <value>We guide you from diagnosis to deployment: we identify which processes to automate first, design the roadmap and measure real ROI.</value>
+  </data>
+  <data name="ProcessTitle" xml:space="preserve">
+    <value>How we work with you</value>
+  </data>
+  <data name="Process1Title" xml:space="preserve">
+    <value>Diagnosis</value>
+  </data>
+  <data name="Process1Desc" xml:space="preserve">
+    <value>We analyze your processes and identify the highest-impact AI opportunities.</value>
+  </data>
+  <data name="Process2Title" xml:space="preserve">
+    <value>Design</value>
+  </data>
+  <data name="Process2Desc" xml:space="preserve">
+    <value>We design the solution architecture and define clear success metrics.</value>
+  </data>
+  <data name="Process3Title" xml:space="preserve">
+    <value>Implementation</value>
+  </data>
+  <data name="Process3Desc" xml:space="preserve">
+    <value>We develop and integrate the solution in agile sprints with partial deliveries.</value>
+  </data>
+  <data name="Process4Title" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="Process4Desc" xml:space="preserve">
+    <value>We provide ongoing support, monitoring and improvements to maximize long-term value.</value>
+  </data>
+  <data name="SectorsTitle" xml:space="preserve">
+    <value>Industries we serve</value>
+  </data>
+  <data name="SectorRetail" xml:space="preserve">
+    <value>Commerce &amp; Retail</value>
+  </data>
+  <data name="SectorHealth" xml:space="preserve">
+    <value>Healthcare</value>
+  </data>
+  <data name="SectorFinance" xml:space="preserve">
+    <value>Finance</value>
+  </data>
+  <data name="SectorLogistics" xml:space="preserve">
+    <value>Logistics</value>
+  </data>
+  <data name="SectorEdu" xml:space="preserve">
+    <value>Education</value>
+  </data>
+  <data name="SectorIndustry" xml:space="preserve">
+    <value>Industry</value>
+  </data>
 </root>

@@ -36,4 +36,82 @@
   <data name="CTAButton" xml:space="preserve">
     <value>Contáctanos hoy</value>
   </data>
+  <data name="CTAServicesLink" xml:space="preserve">
+    <value>Ver todos los servicios</value>
+  </data>
+  <data name="CTADiagFree" xml:space="preserve">
+    <value>Primera sesión de diagnóstico completamente gratuita y sin compromisos.</value>
+  </data>
+  <data name="Service3Title" xml:space="preserve">
+    <value>Agentes Conversacionales</value>
+  </data>
+  <data name="Service3Desc" xml:space="preserve">
+    <value>Implementamos chatbots y agentes de voz con IA para WhatsApp, correo y web que atienden clientes, califican leads y gestionan citas de forma autónoma las 24 horas.</value>
+  </data>
+  <data name="Service4Title" xml:space="preserve">
+    <value>RPA e Integraciones</value>
+  </data>
+  <data name="Service4Desc" xml:space="preserve">
+    <value>Conectamos tus sistemas (CRM, ERP, Contabilidad) y automatizamos flujos como facturación, inventario y seguimiento de leads, eliminando el trabajo manual repetitivo.</value>
+  </data>
+  <data name="Service5Title" xml:space="preserve">
+    <value>Análisis de Datos e IA</value>
+  </data>
+  <data name="Service5Desc" xml:space="preserve">
+    <value>Transformamos los datos de tu negocio en decisiones estratégicas con dashboards inteligentes, modelos predictivos y reportes automáticos generados con IA.</value>
+  </data>
+  <data name="Service6Title" xml:space="preserve">
+    <value>Consultoría Estratégica IA</value>
+  </data>
+  <data name="Service6Desc" xml:space="preserve">
+    <value>Te acompañamos desde el diagnóstico hasta la implementación: identificamos qué procesos automatizar primero, diseñamos la hoja de ruta y medimos el ROI real.</value>
+  </data>
+  <data name="ProcessTitle" xml:space="preserve">
+    <value>¿Cómo trabajamos contigo?</value>
+  </data>
+  <data name="Process1Title" xml:space="preserve">
+    <value>Diagnóstico</value>
+  </data>
+  <data name="Process1Desc" xml:space="preserve">
+    <value>Analizamos tus procesos e identificamos las oportunidades de mayor impacto con IA.</value>
+  </data>
+  <data name="Process2Title" xml:space="preserve">
+    <value>Diseño</value>
+  </data>
+  <data name="Process2Desc" xml:space="preserve">
+    <value>Diseñamos la arquitectura de la solución y definimos métricas de éxito claras.</value>
+  </data>
+  <data name="Process3Title" xml:space="preserve">
+    <value>Implementación</value>
+  </data>
+  <data name="Process3Desc" xml:space="preserve">
+    <value>Desarrollamos e integramos la solución en ciclos ágiles con entregas parciales.</value>
+  </data>
+  <data name="Process4Title" xml:space="preserve">
+    <value>Soporte</value>
+  </data>
+  <data name="Process4Desc" xml:space="preserve">
+    <value>Brindamos soporte continuo, monitoreo y mejoras para maximizar el valor en el tiempo.</value>
+  </data>
+  <data name="SectorsTitle" xml:space="preserve">
+    <value>Sectores que atendemos</value>
+  </data>
+  <data name="SectorRetail" xml:space="preserve">
+    <value>Comercio &amp; Retail</value>
+  </data>
+  <data name="SectorHealth" xml:space="preserve">
+    <value>Salud</value>
+  </data>
+  <data name="SectorFinance" xml:space="preserve">
+    <value>Finanzas</value>
+  </data>
+  <data name="SectorLogistics" xml:space="preserve">
+    <value>Logística</value>
+  </data>
+  <data name="SectorEdu" xml:space="preserve">
+    <value>Educación</value>
+  </data>
+  <data name="SectorIndustry" xml:space="preserve">
+    <value>Industria</value>
+  </data>
 </root>
