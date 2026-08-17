@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiAppWebMvc")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute(" ")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+295fc9459c38b0699a96905dca2eca597cf7ba13")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3aefdfc35736b12b3f1455740affdd8c15fae96e")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiAppWebMvc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiAppWebMvc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
